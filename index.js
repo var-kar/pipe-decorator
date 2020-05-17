@@ -1,3 +1,8 @@
+/**
+ * Author: Karthik Vasudevan
+ * License: MIT
+ */
+
 const processPipe = (arg, accumulator) => {
 	if (typeof arg === 'function') {
 		if (accumulator.length > 1 && Array.isArray(accumulator[0])) {

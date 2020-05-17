@@ -4,13 +4,21 @@
 
 ## Introduction
 
-It's more than two year in making of pipe operator and no one knows if it's going to make it into final JS spec. For more information about Pipeline operator, please refer the below documentation.
+It's more than two years in making of pipe operator and no one knows if it's going to make it into final JS spec. For more information about Pipeline operator, please refer the below documentation.
 
 [link to Pipeline Operator docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Pipeline_operator)
 
-Pipeline operators are more common in functional programming languages, like elixer, haskell etc. Whether they are good for your codebase or how readable they are, those decisions I will leave it to you. But, if you like it and want to incorporate into your JS codebase, boy this is the library you are looking for. 
+Pipeline operators are more common in functional programming languages, like Elixer, Haskell etc. Whether they are good for your codebase or how readable they are, those decisions I will leave it to you. But, if you like it and want to incorporate into your JS codebase, boy this is the library you are looking for. For more information on why I wrote this decorator, please read my blog.
+
+[I made Pipeline Decorator for one who wants to use Pipeline Operator in JavaScript 🚰](https://codesips.io/pipeline-decorator-for-one-who-wants-to-use-pipeline-operator/)
 
 To make things better and useful, this library works with a combination of Promise and functions.
+
+## Use cases
+
+1. Makes your code clean and easy to read.
+2. Better and chaining
+3. Makes multiple Promise handling cleaner and readable with pre and post data preparation. 
 
 ## Install
 
@@ -97,6 +105,6 @@ test7.then((value) => {
 ## TODO
 
 1. Pass function as argument to be invoked as part of another function's argument.
-2. Make browser compatible. It only works on nodejs.
+2. Make browser compatible. It only works on Nodejs.
 3. Test with 3 or 4 arguments. It works, but needs more testing.
 4. More testing in general.

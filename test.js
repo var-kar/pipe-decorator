@@ -27,9 +27,9 @@ let test3 = pipe(preFilter)(_.compact)();
 // Pipe with param and a filter then along with second parameter passed to another filter
 let test4 = pipe(preFilter)(_.compact)(differenceArray)(_.difference)(); //Output: [1, 3]
 // Pipe with pre processing of data before an API call. It returns a promise
-let test5 = pipe(preFilter)(_.compact)(fetchBlogCommentsForPostIds)();
+let test5 = pipe(preFilter)(_.compact)(fetchBlogCommentsByPostIds)();
 // Pipe with post processing of data after the Promise returns. It also returns a promise
-let test6 = pipe(differenceArray)(fetchBlogCommentsForPostIds)(emailToFind)(_.filter)();
+let test6 = pipe(differenceArray)(fetchBlogCommentsByPostIds)(emailToFind)(_.filter)();
 // Pipe with pre and post processing of data with 2 parameters for filter at some point. This also returns a promise.
 let test7 = pipe(preFilter)(_.compact)(differenceArray)(_.difference)(fetchBlogCommentsByPostIds)(emailToFind)(
 	_.filter
@@ -51,4 +51,5 @@ test6.then((value) => {
 
 test7.then((value) => {
 	console.assert(value.length > 0);
+	console.log(value);
 });

@@ -1,13 +1,16 @@
 {
 	"name": "pipe-decorator",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A pipe decorator for javascript",
 	"main": "index.js",
 	"scripts": {
 		"test": "node test"
 	},
 	"author": "Karthik Vasudevan",
-	"repository": {},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/var-kar/pipe-decorator.git"
+	},
 	"license": "MIT",
 	"dependencies": {},
 	"devDependencies": {
